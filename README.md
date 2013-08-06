@@ -33,6 +33,8 @@ Configuration
 
     + Choose a sort order for displaying this payment option to visitors. Lowest is displayed first.
 
+    + Line 108 in bitpay.php sets fullNotifications to true. You can set this to false if you want fewer status update emails.
+
 Usage
 =====
 
