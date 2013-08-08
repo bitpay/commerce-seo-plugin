@@ -44,4 +44,4 @@ $bpOptions['fullNotifications'] = 'true';
 // transaction speed: low/medium/high.   See API docs for more details.
 $bpOptions['transactionSpeed'] = 'low'; 
 
-?> 
+?>
