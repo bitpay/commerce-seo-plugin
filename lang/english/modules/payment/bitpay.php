@@ -32,5 +32,5 @@ define('MODULE_PAYMENT_BITPAY_SORT_ORDER_TITLE', 'Sort order of display.');
 define('MODULE_PAYMENT_BITPAY_SORT_ORDER_DESC', 'Sort order of display. Lowest is displayed first.');
 define('MODULE_PAYMENT_BITPAY_ZONE_TITLE', 'Payment Zone');
 define('MODULE_PAYMENT_BITPAY_ZONE_DESC', 'If a zone is selected, only enable this payment method for that zone.');
-
+define('MODULE_PAYMENT_BITPAY_TEXT_TITLE', 'BitPay');
 ?>
