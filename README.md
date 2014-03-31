@@ -1,11 +1,13 @@
 commerceSEO v2 CE BitPay Module
 ===============================
 
-©2013 BIT-PAY LLC. Permission is hereby granted to any person obtaining a copy of this software and associated documentation for use and/or modification in association with the bitpay.com service.
+<strong>©2013-2014 BITPAY, INC.</strong>
+
+Permission is hereby granted to any person obtaining a copy of this software and associated documentation for use and/or modification in association with the bitpay.com service.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Bitcoin payment module using the bitpay.com service.
+Bitcoin payment module for commerceSEO using the bitpay.com service.
 
 Installation
 ============
@@ -25,7 +27,7 @@ Configuration
 
 	+ Copy/Paste the bitpay.com API key you created into the API Key field
 
-    + Select a transaction speed. The **high** speed will send a confirmation as soon as a transaction is received in the bitcoin network (usually a few seconds). A **medium** speed setting will typically take 10 minutes. The **low** speed setting usually takes around 1 hour. See the bitpay.com merchant documentation for a full description of the transaction speed settings.
+    + Select a transaction speed. The **high** speed will send a confirmation as soon as a transaction is received in the bitcoin network (usually a few seconds). A **medium** speed setting will typically take 10 minutes. The **low** speed setting usually takes around 1 hour. See the bitpay.com merchant documentation for a full description of the transaction speed settings: https://bitpay.com/downloads/bitpayApi.pdf
 	
 	+ Choose a status for unpaid and paid orders (or leave the default values as defined).
 
