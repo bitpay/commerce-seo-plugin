@@ -111,7 +111,6 @@
         'transactionSpeed' => $lut[MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED],
         'apiKey' => MODULE_PAYMENT_BITPAY_APIKEY,
       );
-      bpLog($options);
       $decimal_place = (xtc_db_fetch_array(xtc_db_query("SELECT decimal_point FROM " . TABLE_CURRENCIES . " WHERE  code = '" . $order->info['currency'] . "'")));
       $thousands_place = (xtc_db_fetch_array(xtc_db_query("SELECT thousands_point FROM " . TABLE_CURRENCIES . " WHERE code = '" . $order->info['currency'] . "'")));
       $decimal_place = $decimal_place['decimal_point'];
@@ -128,7 +127,6 @@
       $invoice = bpCreateInvoice($insert_id, $price, $insert_id, $options);
 
       if (!is_array($invoice) or array_key_exists('error', $invoice)) {
-        bpLog($invoice);
         xtc_remove_order($insert_id, $restock = true);
       }
       else {

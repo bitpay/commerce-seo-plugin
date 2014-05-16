@@ -1,8 +1,7 @@
 <?php
 
   require('library/bp_lib.php');
-  include('../../includes/application_top_callback.php'); 
-  //bpLog("reached callback page");
+  include('../../includes/application_top_callback.php');
   $response = bpVerifyNotification(MODULE_PAYMENT_BITPAY_APIKEY);
 
   if (is_string($response)) {
