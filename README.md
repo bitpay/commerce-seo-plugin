@@ -1,21 +1,11 @@
-commerceSEO v2 CE BitPay Module
-===============================
+bitpay/commerce-seo-plugin
+==========================
 
-<strong>©2013-2014 BITPAY, INC.</strong>
-
-Permission is hereby granted to any person obtaining a copy of this software and associated documentation for use and/or modification in association with the bitpay.com service.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-Bitcoin payment module for commerceSEO using the bitpay.com service.
-
-Installation
-============
+# Installation
 
 + Copy the callback, includes, and lang folders into your site directory (it should merge the folders into the existing commerceSEO folders).
 
-Configuration
-=============
+# Configuration
 
 + Create an API key at bitpay.com under My Account > API Access Keys
 
@@ -37,11 +27,52 @@ Configuration
 
     + Line 108 in bitpay.php sets fullNotifications to true. You can set this to false if you want fewer status update emails.
 
-Usage
-=====
+# Usage
 
 + When a user chooses the "Bitcoin via BitPay" payment method, they will be presented with an order summary as the next step (prices are shown in whatever currency they've selected for shopping). Upon confirming their order, the system takes the user to bitpay.com. Once payment is received, a link is presented to the shopper that will take them back to your website.
 
 + In your Admin control panel, you can see the orders made via Bitcoins just as you could see for any other payment mode. The status you selected in the configuration steps above will indicate whether the order has been paid for.
 
 **Note:** This extension does not provide a means of automatically pulling a current BTC exchange rate for presenting BTC prices to shoppers.
+
+# Support
+
+## BitPay Support
+
+* [GitHub Issues](https://github.com/bitpay/commerce-seo-plugin/issues)
+  * Open an issue if you are having issues with this plugin.
+* [Support](https://support.bitpay.com)
+  * BitPay merchant support documentation
+
+## Commerce:SEO Support
+
+* [Homepage](http://www.commerce-seo.de)
+* [Support Forums](http://www.commerce-seo.de/support/)
+
+# Contribute
+
+To contribute to this project, please fork and submit a pull request.
+
+# License
+
+The MIT License (MIT)
+
+Copyright (c) 2011-2014 BitPay
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
