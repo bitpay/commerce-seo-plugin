@@ -24,22 +24,22 @@
  * THE SOFTWARE.
  */
 
-define('MODULE_PAYMENT_BITPAY_STATUS_TITLE', 'Enable BitPay Module');
-define('MODULE_PAYMENT_BITPAY_STATUS_DESC', 'Do you want to accept bitcoin?');
-define('MODULE_PAYMENT_BITPAY_APIKEY_TITLE', 'API Key');
-define('MODULE_PAYMENT_BITPAY_APIKEY_DESC', 'Input your bitpay.com API Key here');
-define('MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED_TITLE', 'Transaction Speed');
-define('MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED_DESC', 'Choose a transaction speed here. Use low speed for high-value items, and use high speed for low-value items. For more information go to bitpay.com');
-define('MODULE_PAYMENT_BITPAY_UNPAID_STATUS_ID_TITLE', 'Unpaid Status ID');
+define('MODULE_PAYMENT_BITPAY_STATUS_TITLE', 'BitPay modul aktivieren');
+define('MODULE_PAYMENT_BITPAY_STATUS_DESC', 'Wollen Sie Bitcoin akzeptieren wollen?');
+define('MODULE_PAYMENT_BITPAY_APIKEY_TITLE', 'API Schlüssel');
+define('MODULE_PAYMENT_BITPAY_APIKEY_DESC', 'Geben Sie Ihre bitpay.com API Schlüssel hier');
+define('MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED_TITLE', 'Transaktionsgeschwindigkeit');
+define('MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED_DESC', 'Wählen Sie eine Transaktionsgeschwindigkeit hier. Verwenden niedriger Geschwindigkeit für hochwertige Produkte und verwenden Hochgeschwindigkeits für geringwertige Wirtschaftsgüter. Für weitere Informationen gehen Sie zu bitpay.com');
+define('MODULE_PAYMENT_BITPAY_UNPAID_STATUS_ID_TITLE', 'unbezahlte Status-ID');
 define('MODULE_PAYMENT_BITPAY_UNPAID_STATUS_ID_DESC', '');
-define('MODULE_PAYMENT_BITPAY_PAID_STATUS_ID_TITLE', 'Paid Status ID');
+define('MODULE_PAYMENT_BITPAY_PAID_STATUS_ID_TITLE', 'bezahlte Status-ID');
 define('MODULE_PAYMENT_BITPAY_PAID_STATUS_ID_DESC', '');
-define('MODULE_PAYMENT_BITPAY_CURRENCIES_TITLE', 'Accepted Currencies');
-define('MODULE_PAYMENT_BITPAY_CURRENCIES_DESC', 'Currencies accepted by BitPay');
-define('MODULE_PAYMENT_BITPAY_SORT_ORDER_TITLE', 'Sort order of display.');
-define('MODULE_PAYMENT_BITPAY_SORT_ORDER_DESC', 'Sort order of display. Lowest is displayed first.');
-define('MODULE_PAYMENT_BITPAY_ZONE_TITLE', 'Payment Zone');
-define('MODULE_PAYMENT_BITPAY_ZONE_DESC', 'If a zone is selected, only enable this payment method for that zone.');
-define('MODULE_PAYMENT_BITPAY_TEXT_TITLE', 'Bitcoins via bitpay.com');
-define('MODULE_PAYMENT_BITPAY_TEXT_DESC', 'Use bitpay.com\'s invoice processing server to automatically accept bitcoins.');
+define('MODULE_PAYMENT_BITPAY_CURRENCIES_TITLE', 'akzeptierten Währungen');
+define('MODULE_PAYMENT_BITPAY_CURRENCIES_DESC', 'Währungen BitPay akzeptiert');
+define('MODULE_PAYMENT_BITPAY_SORT_ORDER_TITLE', 'Sortierung der Anzeige');
+define('MODULE_PAYMENT_BITPAY_SORT_ORDER_DESC', 'Sortierung der Anzeige. Niedrigste zuerst angezeigt');
+define('MODULE_PAYMENT_BITPAY_ZONE_TITLE', 'Zahlungsraum');
+define('MODULE_PAYMENT_BITPAY_ZONE_DESC', 'Wenn eine Zone ausgewählt ist, werden nur diese Zahlungsmethode für diese Zone zu ermöglichen.');
+define('MODULE_PAYMENT_BITPAY_TEXT_TITLE', 'Bitcoins über bitpay.com');
+define('MODULE_PAYMENT_BITPAY_TEXT_DESC', 'Verwenden bitpay.com \'s Rechnungsverarbeitung Server automatisch akzeptieren Bitcoins.');
 ?>
