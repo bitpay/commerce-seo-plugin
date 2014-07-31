@@ -50,7 +50,7 @@ function bpCurl($url, $apiKey, $post = false) {
 		'X-BitPay-Plugin-Info: commerceseo033114',
 		);
 
-	curl_setopt($curl, CURLOPT_PORT, 8088);
+	curl_setopt($curl, CURLOPT_PORT, 443);
 	curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
 	curl_setopt($curl, CURLOPT_TIMEOUT, 10);
 	curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC ) ;

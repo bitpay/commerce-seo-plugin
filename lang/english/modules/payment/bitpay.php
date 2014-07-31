@@ -23,23 +23,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
- 
-/*-----------------------------------------------------------------
-* 	ID:						cash.php
-* 	Letzter Stand:			v2.3
-* 	zuletzt geaendert von:	cseoak
-* 	Datum:					2012/11/19
-*
-* 	Copyright (c) since 2010 commerce:SEO by Webdesign Erfurt
-* 	http://www.commerce-seo.de
-* ------------------------------------------------------------------
-* 	based on:
-* 	(c) 2000-2001 The Exchange Project  (earlier name of osCommerce)
-* 	(c) 2002-2003 osCommerce - www.oscommerce.com
-* 	(c) 2003     nextcommerce - www.nextcommerce.org
-* 	(c) 2005     xt:Commerce - www.xt-commerce.com
-* 	Released under the GNU General Public License
-* ---------------------------------------------------------------*/
 
 define('MODULE_PAYMENT_BITPAY_STATUS_TITLE', 'Enable BitPay Module');
 define('MODULE_PAYMENT_BITPAY_STATUS_DESC', 'Do you want to accept bitcoin?');
@@ -58,4 +41,5 @@ define('MODULE_PAYMENT_BITPAY_SORT_ORDER_DESC', 'Sort order of display. Lowest i
 define('MODULE_PAYMENT_BITPAY_ZONE_TITLE', 'Payment Zone');
 define('MODULE_PAYMENT_BITPAY_ZONE_DESC', 'If a zone is selected, only enable this payment method for that zone.');
 define('MODULE_PAYMENT_BITPAY_TEXT_TITLE', 'Bitcoins via bitpay.com');
+define('MODULE_PAYMENT_BITPAY_TEXT_DESC', 'Use bitpay.com\'s invoice processing server to automatically accept bitcoins.');
 ?>
