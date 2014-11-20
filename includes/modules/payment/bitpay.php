@@ -144,7 +144,7 @@ class bitpay {
       'redirectURL' => xtc_href_link('account'),
       'transactionSpeed' => $lut[MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED],
       'apiKey' => MODULE_PAYMENT_BITPAY_APIKEY,
-      'network' => $netork[MODULE_PAYMENT_BITPAY_NETWORK],
+      'network' => $network[MODULE_PAYMENT_BITPAY_NETWORK],
     );
 
     $decimal_place = (xtc_db_fetch_array(xtc_db_query("SELECT decimal_point FROM " . TABLE_CURRENCIES . " WHERE  code = '" . $order->info['currency'] . "'")));
