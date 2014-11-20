@@ -210,6 +210,7 @@ class bitpay {
     $fields = " (configuration_key, configuration_value, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) ";
     
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_STATUS', 'False', '6', '0', NULL, now(), '', 'xtc_cfg_select_option(array(\'True\', \'False\'),' )");
+    xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_NETWORK', 'Live', '6', '0', NULL, now(), '', 'xtc_cfg_select_option(array(\'Test\', \'Live\'),' )");
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_APIKEY', '', '6', '0', NULL, now(), '', '')");
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED', 'Low-6 Confirmations', '6', '0', NULL, now(), '', 'xtc_cfg_SELECT_option(array(\'High-0 Confirmations\', \'Medium-1 Confirmations\', \'Low-6 Confirmations\'),')");
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_UNPAID_STATUS_ID', '" . intval(DEFAULT_ORDERS_STATUS_ID) . "', '6', '0', NULL, now(), 'xtc_get_order_status_name', 'xtc_cfg_pull_down_order_statuses(')");
@@ -217,7 +218,6 @@ class bitpay {
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_CURRENCIES', 'BTC, USD, EUR, GBP, AUD, BGN, BRL, CAD, CHF, CNY, CZK, DKK, HKD, HRK, HUF, IDR, ILS, INR, JPY, KRW, LTL, LVL, MXN, MYR, NOK, NZD, PHP, PLN, RON, RUB, SEK, SGD, THB, TRY, ZAR', '6', '0', NULL, now(), '', '')");
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_ZONE', '0', '6', '2', NULL, now(), 'xtc_get_zone_class_title', 'xtc_cfg_pull_down_zone_classes(')");
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_SORT_ORDER', '0', '6', '2', NULL, now(), '', '')");
-    xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_NETWORK', 'Live', '6', '0', NULL, now(), '', 'xtc_cfg_select_option(array(\'Test\', \'Live\'),' )");
 
   }
 
@@ -228,14 +228,14 @@ class bitpay {
   function keys() {
     return array(
       'MODULE_PAYMENT_BITPAY_STATUS',
+      'MODULE_PAYMENT_BITPAY_NETWORK',
       'MODULE_PAYMENT_BITPAY_APIKEY',
       'MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED',
       'MODULE_PAYMENT_BITPAY_UNPAID_STATUS_ID',
       'MODULE_PAYMENT_BITPAY_PAID_STATUS_ID',
       'MODULE_PAYMENT_BITPAY_SORT_ORDER',
       'MODULE_PAYMENT_BITPAY_ZONE',
-      'MODULE_PAYMENT_BITPAY_CURRENCIES',
-      'MODULE_PAYMENT_BITPAY_NETWORK',
+      'MODULE_PAYMENT_BITPAY_CURRENCIES'
     );
   }
 }
