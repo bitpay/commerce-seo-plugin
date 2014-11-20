@@ -128,6 +128,11 @@ class bitpay {
       "Low-6 Confirmations" => 'low'
     );
 
+    $network = array(
+      "Live" => 'Live',
+      "Test" => 'Test'
+    );
+
     // change order status to value selected by merchant
     xtc_db_query("update ". TABLE_ORDERS . " set orders_status = " . intval(MODULE_PAYMENT_BITPAY_UNPAID_STATUS_ID) . " where orders_id = " . intval($insert_id));
     $options = array(
@@ -139,6 +144,7 @@ class bitpay {
       'redirectURL' => xtc_href_link('account'),
       'transactionSpeed' => $lut[MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED],
       'apiKey' => MODULE_PAYMENT_BITPAY_APIKEY,
+      'network' => $netork[MODULE_PAYMENT_BITPAY_NETWORK],
     );
 
     $decimal_place = (xtc_db_fetch_array(xtc_db_query("SELECT decimal_point FROM " . TABLE_CURRENCIES . " WHERE  code = '" . $order->info['currency'] . "'")));
@@ -211,6 +217,7 @@ class bitpay {
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_CURRENCIES', 'BTC, USD, EUR, GBP, AUD, BGN, BRL, CAD, CHF, CNY, CZK, DKK, HKD, HRK, HUF, IDR, ILS, INR, JPY, KRW, LTL, LVL, MXN, MYR, NOK, NZD, PHP, PLN, RON, RUB, SEK, SGD, THB, TRY, ZAR', '6', '0', NULL, now(), '', '')");
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_ZONE', '0', '6', '2', NULL, now(), 'xtc_get_zone_class_title', 'xtc_cfg_pull_down_zone_classes(')");
     xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_SORT_ORDER', '0', '6', '2', NULL, now(), '', '')");
+    xtc_db_query("INSERT INTO " . TABLE_CONFIGURATION . $fields . "values ('MODULE_PAYMENT_BITPAY_NETWORK', 'Live', '6', '0', NULL, now(), '', 'xtc_cfg_select_option(array(\'Test\', \'Live\'),' )");
 
   }
 
@@ -228,6 +235,7 @@ class bitpay {
       'MODULE_PAYMENT_BITPAY_SORT_ORDER',
       'MODULE_PAYMENT_BITPAY_ZONE',
       'MODULE_PAYMENT_BITPAY_CURRENCIES',
+      'MODULE_PAYMENT_BITPAY_NETWORK',
     );
   }
 }
