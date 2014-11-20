@@ -26,7 +26,8 @@
 
 define('MODULE_PAYMENT_BITPAY_STATUS_TITLE', 'Enable BitPay Module');
 define('MODULE_PAYMENT_BITPAY_STATUS_DESC', 'Do you want to accept bitcoin?');
-define('MODULE_PAYMENT_BITPAY_NETWORK', 'Network');
+define('MODULE_PAYMENT_BITPAY_NETWORK_TITLE', 'Network');
+define('MODULE_PAYMENT_BITPAY_NETWORK_DESC', 'Select whether using an API key from bitpay.com or test.bitpay.com');
 define('MODULE_PAYMENT_BITPAY_APIKEY_TITLE', 'API Key');
 define('MODULE_PAYMENT_BITPAY_APIKEY_DESC', 'Input your bitpay.com API Key here');
 define('MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED_TITLE', 'Transaction Speed');
