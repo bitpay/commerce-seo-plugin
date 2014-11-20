@@ -109,8 +109,8 @@ function bpCreateInvoice($orderId, $price, $posData, $options = array()) {
 		if (array_key_exists($o, $options))
 			$post[$o] = $options[$o];
 	$post = json_encode($post);
-	
-	$response = bpCurl('https://bitpay.com/api/invoice/', $options['apiKey'], $post);
+	$network = (MODULE_PAYMENT_BITPAY_NETWORK == 'Test') ? 'test.' : '';
+	$response = bpCurl('https://'.$network.'bitpay.com/api/invoice/', $options['apiKey'], $post);
 	
 	return $response;
 }
@@ -147,7 +147,8 @@ function bpGetInvoice($invoiceId, $apiKey=false) {
 	if (!$apiKey)
 		$apiKey = $bpOptions['apiKey'];		
 
-	$response = bpCurl('https://bitpay.com/api/invoice/'.$invoiceId, $apiKey);
+	$network = (MODULE_PAYMENT_BITPAY_NETWORK == 'Test') ? 'test.' : '';
+	$response = bpCurl('https://'.$network.'bitpay.com/api/invoice/'.$invoiceId, $apiKey);
 	if (is_string($response))
 		return $response; // error
 	$response['posData'] = json_decode($response['posData'], true);
