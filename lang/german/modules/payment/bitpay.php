@@ -26,6 +26,8 @@
 
 define('MODULE_PAYMENT_BITPAY_STATUS_TITLE', 'BitPay modul aktivieren');
 define('MODULE_PAYMENT_BITPAY_STATUS_DESC', 'Wollen Sie Bitcoin akzeptieren wollen?');
+define('MODULE_PAYMENT_BITPAY_NETWORK_TITLE', 'Network');
+define('MODULE_PAYMENT_BITPAY_NETWORK_DESC', 'Select whether using an API key from bitpay.com or test.bitpay.com');
 define('MODULE_PAYMENT_BITPAY_APIKEY_TITLE', 'API Schlüssel');
 define('MODULE_PAYMENT_BITPAY_APIKEY_DESC', 'Geben Sie Ihre bitpay.com API Schlüssel hier');
 define('MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED_TITLE', 'Transaktionsgeschwindigkeit');
