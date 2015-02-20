@@ -1,59 +1,32 @@
-bitpay/commerce-seo-plugin
-==========================
+# Description
 
-# Installation
+Bitcoin payment plugin for commerceSEO using the bitpay.com service.
 
-+ Copy the callback, includes, and lang folders into your site directory (it should merge the folders into the existing commerceSEO folders).
 
-# Configuration
+## Quick Start Guide
 
-+ Create an API key at bitpay.com under My Account > API Access Keys
+To get up and running with our plugin quickly, see the GUIDE here: https://github.com/bitpay/commerce-seo-plugin/blob/master/GUIDE.md
 
-+ In your commerceSEO admin panel under Modules > Payment, install the "Bitcoin via BitPay" module
 
-+ Fill out all of the configuration information:
+## Support
 
-	+ Verify that the module is enabled.
-
-	+ Copy/Paste the bitpay.com API key you created into the API Key field
-
-    + Select a transaction speed. The **high** speed will send a confirmation as soon as a transaction is received in the bitcoin network (usually a few seconds). A **medium** speed setting will typically take 10 minutes. The **low** speed setting usually takes around 1 hour. See the bitpay.com merchant documentation for a full description of the transaction speed settings: https://bitpay.com/downloads/bitpayApi.pdf
-	
-	+ Choose a status for unpaid and paid orders (or leave the default values as defined).
-
-	+ Verify that the currencies displayed corresponds to what you want and to those accepted by bitpay.com (the defaults are what BitPay accepts as of this writing).
-
-    + Choose a sort order for displaying this payment option to visitors. Lowest is displayed first.
-
-    + Line 108 in bitpay.php sets fullNotifications to true. You can set this to false if you want fewer status update emails.
-
-# Usage
-
-+ When a user chooses the "Bitcoin via BitPay" payment method, they will be presented with an order summary as the next step (prices are shown in whatever currency they've selected for shopping). Upon confirming their order, the system takes the user to bitpay.com. Once payment is received, a link is presented to the shopper that will take them back to your website.
-
-+ In your Admin control panel, you can see the orders made via Bitcoins just as you could see for any other payment mode. The status you selected in the configuration steps above will indicate whether the order has been paid for.
-
-**Note:** This extension does not provide a means of automatically pulling a current BTC exchange rate for presenting BTC prices to shoppers.
-
-# Support
-
-## BitPay Support
+**BitPay Support:**
 
 * [GitHub Issues](https://github.com/bitpay/commerce-seo-plugin/issues)
   * Open an issue if you are having issues with this plugin.
 * [Support](https://support.bitpay.com)
   * BitPay merchant support documentation
 
-## Commerce:SEO Support
+**Commerce:SEO Support:**
 
 * [Homepage](http://www.commerce-seo.de)
 * [Support Forums](http://www.commerce-seo.de/support/)
 
-# Contribute
+## Contribute
 
 To contribute to this project, please fork and submit a pull request.
 
-# License
+## License
 
 The MIT License (MIT)
 
