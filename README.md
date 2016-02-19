@@ -21,7 +21,7 @@ To get up and running with our plugin quickly, see the GUIDE here: https://githu
 * Last Version Tested: 2.5.6
 * [GitHub Issues](https://github.com/bitpay/commerce-seo-plugin/issues)
   * Open an issue if you are having issues with this plugin.
-* [Support](https://support.bitpay.com)
+* [Support](https://help.bitpay.com)
   * BitPay merchant support documentation
 
 **Commerce:SEO Support:**
